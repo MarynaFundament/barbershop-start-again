@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0 auto;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.link{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+   }
+
+img{
+    display: block;
+}
+
+.button{
+    cursor: pointer;
+}
