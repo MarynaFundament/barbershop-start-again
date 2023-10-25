@@ -1,0 +1,23 @@
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.portfolio-container{
+    
+}
+
+.portfolio-top-p {
+    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+
+}
+.portfolio-list {
+    margin-top: 44px;
+    display: flex;
+    gap: 30px;
+}
+.portfolio-item {
+}
+.portfolio-img {
+}

@@ -1,0 +1,65 @@
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: aqua;
+    
+}
+
+.about-container{
+    display: flex;
+    gap: 30px;
+}
+
+.about-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-block{
+    min-width: 480px;
+   
+}
+
+.about-item {
+
+}
+
+.about-top-paragraph {
+    @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--title-text-color2));
+    
+}
+
+.about-header {
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+    margin-top: 20px;
+}
+
+.about-bottom-paragraph {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    margin-top: 20px;
+}
+
+.about-main-text {
+    @include font(var(--primary-font), 400, 14px, 1.86, 2%, var(--primary-text-color));
+    margin-top: 20px;
+}
+
+.about-button {
+    @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color2));
+    display: block;
+    
+    margin-top: 42px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    width: 160px;
+    height: 40px;
+
+    border-radius: 25px;
+    border: 1px solid rgba(255, 108, 0, 1);
+    background-color: transparent;
+}

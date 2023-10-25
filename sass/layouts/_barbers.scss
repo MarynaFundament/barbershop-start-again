@@ -1,0 +1,42 @@
+.barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: aqua;
+   
+}
+
+.barbers-container{
+   
+}
+
+.barbers-top-p {
+    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+
+}
+.barbers-header {
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+    margin-top: 20px;
+}
+.barbers-list {
+    margin-top: 44px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.barbers-item {
+    width: calc((100% - 60px)/3)
+}
+.barbers-img {
+}
+
+
+.barbers-h-pictures {
+    @include font(var(--primary-font), 400, 18px, 1.36, 2%, var(--primary-text-color));
+}
+
+.barbers-p-pictures {
+    @include font(var(--primary-font), 600, 14px, 1.36, 2%, var(--accent-color));
+
+    
+}

@@ -1,0 +1,32 @@
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 110px;
+    // background-color: pink;
+}
+.contacts-header {
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+
+}
+.contacts-list {
+    
+}
+.contacts-item {
+}
+
+.contacts-address{
+    @include font(var(--primary-font), 700, 18px, 1.66, 2%, var(--primary-text-color));
+
+}
+
+.contacts-link {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+
+}
+.contacts-span {
+    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--primary-text-color));
+
+}
+.contacts-bottom-p {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+
+}
