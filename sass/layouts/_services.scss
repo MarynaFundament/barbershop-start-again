@@ -1,18 +1,20 @@
 .services {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: pink;
+    
 
+    background-image:url(../../images/Background_services.png);
+    background-size: cover;
 }
 
 
 
 .services-paragraph {
-    @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+    @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
 }
 
 .services-header {
-    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--primary-text-color));
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
     margin-top: 20px;
 }
 
@@ -29,12 +31,11 @@
     padding: 30px 20px;
 
     width:calc((100% - 30px) / 2);
-    
-
   
 }
+
 .services-item {
-    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--paragraph-text-color));
     
     display: flex;
     justify-content: space-between;
@@ -42,9 +43,10 @@
 }
 
 .services-p-list {
-    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--paragraph-text-color));
     display: inline-block
 }
+
 
 .services-s-list {
   
@@ -71,7 +73,5 @@
     border-radius: 25px;
     border: 1px solid rgba(255, 108, 0, 1);
     background-color: transparent;
-  
-
-    
+      
 }
