@@ -10,15 +10,30 @@
 .hero_networks{
    background-color: #fff;
    width: 100px;
+
+   display: flex;
+   align-items: flex-end;
+  
 }
 
 .hero-span {
+}
+
+.network_list{
+    display: flex;
+    gap: 40px;
+    margin-top: 15px;
+
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
+
 }
 
 .hero-Instagram {
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
 
 }
+
 
 .hero-Youtube {
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
@@ -30,6 +45,20 @@
 
 margin-top: 92px;
 margin-bottom: 20px;
+
+
+display: flex;
+align-items: center;
+gap: 20px
+}
+
+.hero-head-pargraph::before{
+
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+ 
 }
 
 .hero-header {

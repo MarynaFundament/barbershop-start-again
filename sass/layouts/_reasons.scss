@@ -6,21 +6,37 @@
 
 
 .reasons-container{
-display: flex;
+    display: flex;
+    gap: 130px;
 }
 
 .reasons-list {
-    display: flex; 
-
+    display: flex;
+    width:370px;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
 
 .reasons-item {
     width:170px;
     height: 133px;
-    border: 1px solid tomato;
     padding: 20px 24px;
-    text-align: center
+    text-align: center;
+
+    background-color: rgba(247, 247, 247, 1); 
+}
+
+
+.reasons-item:nth-child(odd) {
+    margin-right: 30px;
+   
+}
+
+.reasons-item:nth-child(even) {
+    margin-top: 30px;
+   
 }
 
 .reasons-list-span{
@@ -30,6 +46,10 @@ display: flex;
 .reasons-list-p{
 @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
 
+}
+
+.reasons-el-container{
+padding-top: 9px;
 }
 
 .reasons-top-p {

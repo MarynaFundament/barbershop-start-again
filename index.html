@@ -29,8 +29,8 @@
                 </ul>
         </nav>
         
-                    <a  class="header-navigation-tel" href="tel:+38 044 111 11 11"> +38 044 111 11 11</a>
-                    <button  class="header-navigation-button" type="button"> ONLINE-BOOKING </button>
+        <a  class="header-navigation-tel" href="tel:+38 044 111 11 11"> +38 044 111 11 11</a>
+        <button  class="header-navigation-button" type="button" data-modal-open> ONLINE-BOOKING </button>
       
         
                
@@ -45,8 +45,11 @@
 
                <div class="hero_networks">
                 <span class="hero-span"></span>
-                <a class="hero-Instagram" href="">Instagram</a>
-                <a class="hero-Youtube" href="">Youtube</a>
+                <ul class="network_list">
+                    <li><a class="hero-Instagram" href="">Instagram</a></li>
+                    <li> <a class="hero-Youtube" href="">Youtube</a></li>
+                </ul>
+               
                </div>
 
            <div class="hero-wrap">
@@ -110,20 +113,20 @@
             </ul>
             <ul class="services-list">
                 <li class="services-item">
-                    <span class="services-p-item">Trainee’s haircut</span>
-                    <span class="services-s-item">from 50 uah.</span>
+                    <span class="services-p-list">Trainee’s haircut</span>
+                    <span class="services-s-list">from 50 uah.</span>
                 </li>
                 <li class="services-item">
-                    <span class="services-p-item">Haircut under the nozzle</span>
-                    <span class="services-s-item">from 200 uah.</span>
+                    <span class="services-p-list">Haircut under the nozzle</span>
+                    <span class="services-s-list">from 200 uah.</span>
                 </li>
                 <li class="services-item">
-                    <span class="services-p-item">Children’s haircut (0-12 y.o.)</span>
-                    <span class="services-s-item">from 300 uah.</span>
+                    <span class="services-p-list">Children’s haircut (0-12 y.o.)</span>
+                    <span class="services-s-list">from 300 uah.</span>
                 </li>
                 <li class="services-item">
-                    <span class="services-p-item">Camouflage of gray hair</span>
-                    <span class="services-s-item">from 200 uah.</span>
+                    <span class="services-p-list">Camouflage of gray hair</span>
+                    <span class="services-s-list">from 200 uah.</span>
                 </li>
             </ul>
         </div>
@@ -161,7 +164,11 @@
                     <p class="barbers-p-pictures" >Extreme Barber</p>
                     <ul class="social_media_list">
                         <li class="social_media_item">
-                            <a class="social_media_link link" href="#"></a>
+                            <a class="social_media_link link" href="#">
+                                <svg class="social_media_icon" width="20" height="20">
+                                    <use href = "./images/symbol-defs.svg#icon-instagram-2-5"></use>
+                                </svg>
+                            </a>
                         </li>
                         <li class="social_media_item"><a class="social_media_link link" href="#"></a></li>
                         <li class="social_media_item"><a class="social_media_link link" href="#"></a></li>
@@ -207,17 +214,44 @@
     </div>
 
     </section>
-    <section class="booking">
+    <section class = "booking-contacts">
+    <div class="common-container container">
+    <div class="booking" id="contacts">
         <div class="container booking-container">
         <h2 class="booking-header">Online-booking</h2>
-        <form class="booking-form" action=""></form>
-        <button class="booking-button"  type="submit">SEND</button>
+
+       
+    <form class="booking-form">
+        <div class="form-el">
+            <input type="text"
+             class="form-input higher-form-el"
+             name = "form-name"
+             placeholder="NAME*">
+
+            <input type="tel"
+             class="form-input higher-form-el"
+             name = "form-tel"
+             placeholder="PHONE*">
         </div>
-    </section>
-    <section class="contacts" id="contacts">
-        <div class="container">
-            <h2 class="contacts-header">Contacts</h2>
-            <ul class="contacts-list">
+
+             <textarea
+             class="form-input form-message"
+             name="form-message" 
+             id="form-message" 
+             placeholder="MESSAGE"
+             ></textarea>
+
+
+            <button class="booking-button"  type="submit">SEND</button>
+    </form>
+
+      
+        </div>
+    </div>
+  
+    <div class="contacts">
+        <h2 class="contacts-header">Contacts</h2>
+        <ul class="contacts-list">
                 <li class="contacts-item"> <a  class="contacts-link contacts-address" href=#>st. Vasilkivska, 7A
                     Kyiv, 08132</a>
                 </li>
@@ -225,13 +259,15 @@
                 </li>
                 <li class="contacts-item"><a  class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
                 </li>
-            </ul>
+        </ul>
     
-            <span class="contacts-span">WORKING HOURS</span>
-            <p class="contacts-bottom-p"> Every day from 9:00 to 22:00</p>
-        </div>
-       
+        <span class="contacts-span">WORKING HOURS</span>
+        <p class="contacts-bottom-p"> Every day from 9:00 to 22:00</p>
+     </div>
+
+    </div>
     </section>
+    
  </main> 
 
 
@@ -247,6 +283,39 @@
 </ul>
 </div>
 </footer>
+
+<div class="backdrop" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>X</button>
+        
+        <form class="booking-modal-form">
+            <div class="modal-el">
+                <input type="text"
+                 class="modal-input higher-modal-el"
+                 name = "modal-name"
+                 placeholder="NAME*">
+    
+                <input type="tel"
+                 class="modal-input higher-modal-el"
+                 name = "modal-tel"
+                 placeholder="PHONE*">
+            </div>
+    
+                 <textarea
+                 class="modal-input modal-message"
+                 name="modal-message" 
+                 id="modal-message" 
+                 placeholder="MESSAGE"
+                 ></textarea>
+    
+    
+                <button class="modal-button"  type="submit">SEND</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
     
 </body>
 </html>

@@ -1,7 +1,9 @@
 .contacts {
     padding-top: 130px;
     padding-bottom: 110px;
-    // background-color: pink;
+    width: 50%;
+
+
 }
 .contacts-header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));

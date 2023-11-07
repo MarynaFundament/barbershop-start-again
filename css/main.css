@@ -51,6 +51,107 @@ img {
   outline: solid tomato;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.563);
+}
+
+.modal {
+  width: 500px;
+  min-height: 550px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(153, 153, 153, 0.6);
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.booking-modal-form {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.booking-modal-form::-moz-placeholder {
+  margin-left: 10px;
+}
+
+.booking-modal-form:-ms-input-placeholder {
+  margin-left: 10px;
+}
+
+.booking-modal-form::placeholder {
+  margin-left: 10px;
+}
+
+.modal-el {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.modal-input {
+  width: 250px;
+  height: 30px;
+}
+
+.higher-modal-el {
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.modal-message {
+  width: 100%;
+  height: 100px;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.modal-button {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 9%;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10.83px;
+  padding-bottom: 10.83px;
+  width: 160px;
+  height: 36.11;
+  border-radius: 25px;
+  border: 1px solid rgb(255, 108, 0);
+  background-color: transparent;
+}
+
 .header {
   background-color: grey;
   padding-top: 22px;
@@ -113,6 +214,16 @@ img {
 .hero_networks {
   background-color: #fff;
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.network_list {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
 }
 
 .hero-Instagram {
@@ -142,6 +253,16 @@ img {
   color: var(--primary-text-color);
   margin-top: 92px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-head-pargraph::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .hero-header {
@@ -321,6 +442,14 @@ img {
   width: calc((100% - 30px) / 2);
 }
 
+.services-list:first-child {
+  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.services-list:last-child {
+  background-image: linear-gradient(180deg, rgb(9, 11, 19) 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
 .services-item {
   font-family: var(--primary-font);
   font-weight: 400;
@@ -330,6 +459,17 @@ img {
   color: var(--paragraph-text-color);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.services-item::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .services-p-list {
@@ -340,6 +480,10 @@ img {
   letter-spacing: 2%;
   color: var(--paragraph-text-color);
   display: inline-block;
+}
+
+.services-p-list {
+  order: -1;
 }
 
 .services-button {
@@ -371,18 +515,31 @@ img {
 
 .reasons-container {
   display: flex;
+  gap: 130px;
 }
 
 .reasons-list {
   display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .reasons-item {
   width: 170px;
   height: 133px;
-  border: 1px solid tomato;
   padding: 20px 24px;
   text-align: center;
+  background-color: rgb(247, 247, 247);
+}
+
+.reasons-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .reasons-list-span {
@@ -401,6 +558,10 @@ img {
   line-height: 1.36;
   letter-spacing: 5%;
   color: var(--title-text-color2);
+}
+
+.reasons-el-container {
+  padding-top: 9px;
 }
 
 .reasons-top-p {
@@ -503,6 +664,10 @@ img {
   height: 100%;
   background-color: tomato;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: black;
 }
 
 .portfolio {
@@ -525,10 +690,20 @@ img {
   gap: 30px;
 }
 
+.common-container {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .booking {
   padding-top: 130px;
   padding-bottom: 110px;
   background-color: aqua;
+  width: 50%;
 }
 
 .booking-container {
@@ -542,6 +717,52 @@ img {
   line-height: 1.17;
   letter-spacing: 5%;
   color: var(--title-text-color);
+  margin-bottom: 44px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+.form-input {
+  background-color: rgb(25, 28, 38);
+  color: aliceblue;
+}
+
+.form-el {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+  margin-right: 25px;
+}
+
+.higher-form-el {
+  width: 270px;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-message {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-input::-moz-placeholder {
+  color: aqua;
+}
+
+.form-input:-ms-input-placeholder {
+  color: aqua;
+}
+
+.form-input::placeholder {
+  color: aqua;
 }
 
 .booking-button {
@@ -557,7 +778,7 @@ img {
   padding-left: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
-  min-width: 160px;
+  width: 160px;
   height: 40px;
   border-radius: 25px;
   border: 1px solid rgb(255, 108, 0);
@@ -567,6 +788,7 @@ img {
 .contacts {
   padding-top: 130px;
   padding-bottom: 110px;
+  width: 50%;
 }
 
 .contacts-header {
