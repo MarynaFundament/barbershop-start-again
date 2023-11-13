@@ -1,7 +1,6 @@
 .reasons {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: yellow;
 }
 
 
@@ -17,14 +16,20 @@
     margin-top: 0;
     margin-bottom: 0;
 
+    align-items: center;
+    
+
 }
 
 .reasons-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
     width:170px;
     height: 133px;
     padding: 20px 24px;
-    text-align: center;
-
+    
     background-color: rgba(247, 247, 247, 1); 
 }
 
@@ -41,10 +46,25 @@
 
 .reasons-list-span{
 @include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
+display: flex;
+gap: 5px;
+align-items:center;
+
+margin:auto;
+
+}
+
+.reasons-list-span::after{
+ content: '+';
+ font-size: 20px;
+ color: #FF6C00;
+
 }
 
 .reasons-list-p{
 @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
+
+text-align: center;
 
 }
 
@@ -55,6 +75,10 @@ padding-top: 9px;
 .reasons-top-p {
 @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
 margin-bottom: 20px;
+display: flex;
+align-items: center;
+gap: 20px;
+
 }
 .reasons-header {
 @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));

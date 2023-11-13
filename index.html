@@ -43,24 +43,26 @@
     <section class="hero"> 
         <div class="container hero-container">
 
-               <div class="hero_networks">
-                <span class="hero-span"></span>
-                <ul class="network_list">
-                    <li><a class="hero-Instagram" href="">Instagram</a></li>
-                    <li> <a class="hero-Youtube" href="">Youtube</a></li>
-                </ul>
+            <div class="hero_networks">
+
+            <ul class="network_list">
+                <li class="li-network"> <a class="a-network span-instagram" href="#">Instagram</a></li>
+                <li class="li-network"> <a class="a-network" href="#">Youtube</a></li>
+            </ul>
                
-               </div>
+            </div>
 
            <div class="hero-wrap">
-           <p class="hero-head-pargraph" >A HAIR SALON FOR MEN IN KYIV</p>
+           <p class="hero-head-pargraph paragraph-before" >A HAIR SALON FOR MEN IN KYIV</p>
            <h1 class="hero-header" >BarberShop</h1>
            <p class="hero-bottom-paragraph"> We are experts in trendy men’s haircuts.<br>
                We work quickly, carefully and with style.</p>
            </div>
            
-           <!-- <span class="hero-back-span"> Back</span>
-           <span class="hero-forward-span"> Forward</span> -->
+           <ul class="decor-button_list">
+            <li class="decor-button_item1">Back</li>
+            <li class="decor-button_item2">Forward</li>
+           </ul>
         </div>
         
     </section>
@@ -72,7 +74,7 @@
                 <li class="about-item" ><img src="./images/Barbershopimg2.jpg" alt="Barber photo" width="270" height="445"></li>
             </ul>
             <div class="about-block">
-                <p class="about-top-paragraph" >ABOUT</p>
+                <p class="about-top-paragraph paragraph-before" >ABOUT</p>
                 <h2 class="about-header" >Best Barbershop in <br> your city</h2>
                 <p class="about-bottom-paragraph" >If you want to add more confidence to your image,<br>
                     you should definitely visit us.</p>
@@ -89,7 +91,7 @@
     </section> 
     <section class="services" id="services">
         <div class="container ">
-        <p class="services-paragraph ">SPEND YOUR TIME WITH THE BEST MASTERS</p>
+        <p class="services-paragraph paragraph-before">SPEND YOUR TIME WITH THE BEST MASTERS</p>
         <h2 class="services-header">Services and prices</h2>
 
         <div class="lists-container">
@@ -138,14 +140,14 @@
     <section class="reasons"> 
         <div class="container reasons-container">
         <ul class="reasons-list" >
-            <li class="reasons-item" ><span class="reasons-list-span" >600</span><p class="reasons-list-p">Satisfied customers per day</p></li>
-            <li class="reasons-item" ><span class="reasons-list-span" >50</span><p class="reasons-list-p">Awards for excellent service</p></li>
-            <li class="reasons-item" ><span class="reasons-list-span" >20</span><p class="reasons-list-p">Kyiv’s best barbers</p></li>
-            <li class="reasons-item" ><span class="reasons-list-span" >100</span><p class="reasons-list-p">Gifts for regular customers</p></li>
+            <li class="reasons-item" ><span class="reasons-list-span decor-span" >600</span><p class="reasons-list-p">Satisfied customers per day</p></li>
+            <li class="reasons-item" ><span class="reasons-list-span decor-span" >50</span><p class="reasons-list-p">Awards for excellent service</p></li>
+            <li class="reasons-item" ><span class="reasons-list-span decor-span" >20</span><p class="reasons-list-p">Kyiv’s best barbers</p></li>
+            <li class="reasons-item" ><span class="reasons-list-span decor-span" >100</span><p class="reasons-list-p">Gifts for regular customers</p></li>
         </ul>
 
         <div class="reasons-el-container">
-            <p class="reasons-top-p" >OLD TRADITIONAL SCHOOL</p>
+            <p class="reasons-top-p paragraph-before" >OLD TRADITIONAL SCHOOL</p>
             <h2 class="reasons-header" >¿Why people come <br> to us?</h2>
             <p class="reasons-bottom-p" >Only good things are said about us. But it's better to see<br>
                and feel 1 time than read 10 times. </p>
@@ -156,12 +158,16 @@
     <section class="barbers" id="barbers">
         <div class="container barbers-container">
 
-        <p class="barbers-top-p" >For true enjoyers of the atmosphere</p>
+        <p class="barbers-top-p paragraph-before" >For true enjoyers of the atmosphere</p>
             <h2 class="barbers-header" >Our barbers</h2>
             <ul class="barbers-list" >
-                <li class="barbers-item" ><img  class="barbers-img" src="./images/barber1.jpg" alt="John Smith" width="370" height="346"> 
+                <li class="barbers-item" >
+                  <img  class="barbers-img" src="./images/barber1.jpg" alt="John Smith" width="370" height="346"> 
+                    <div class="image-caption">
                     <h3 class="barbers-h-pictures" >John Smith</h3> 
                     <p class="barbers-p-pictures" >Extreme Barber</p>
+                    </div>
+                    
                     <ul class="social_media_list">
                         <li class="social_media_item">
                             <a class="social_media_link link" href="#">
@@ -170,31 +176,87 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="social_media_item"><a class="social_media_link link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link link" href="#"></a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-twitter-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-facebook-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-linkedin-1-2-1"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </li>
                 <li class="barbers-item" >
                     <img  class="barbers-img" src="./images/barber2.jpg" alt="Michele Doe" width="370" height="346"> 
-                    <h3 class="barbers-h-pictures" >Michele Doe</h3>
-                     <p class="barbers-p-pictures" >Extreme Barber</p>
-                     <ul class="social_media_list">
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
+                    
+                    <div class="image-caption">
+                        <h3 class="barbers-h-pictures" >Michele Doe</h3>
+                         <p class="barbers-p-pictures" >Extreme Barber</p>
+                    </div>
+                    
+                    <ul class="social_media_list">
+                        <li class="social_media_item">
+                            <a class="social_media_link link" href="#">
+                                <svg class="social_media_icon" width="20" height="20">
+                                    <use href = "./images/symbol-defs.svg#icon-instagram-2-5"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-twitter-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-facebook-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-linkedin-1-2-1"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </li>
                 <li class="barbers-item" >
                     <img class="barbers-img" src="./images/barber3.jpg" alt="Alan Black" width="370" height="346">
-                     <h3 class="barbers-h-pictures">Alan Black</h3>
-                     <p class="barbers-p-pictures">Extreme Barber</p>
-                     <ul class="social_media_list">
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
-                        <li class="social_media_item"><a class="social_media_link" href="#"></a></li>
+                     
+                    <div class="image-caption">
+                        <h3 class="barbers-h-pictures">Alan Black</h3>
+                        <p class="barbers-p-pictures">Extreme Barber</p> 
+                    </div>
+                    
+                    <ul class="social_media_list">
+                        <li class="social_media_item">
+                            <a class="social_media_link link" href="#">
+                                <svg class="social_media_icon" width="20" height="20">
+                                    <use href = "./images/symbol-defs.svg#icon-instagram-2-5"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-twitter-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-facebook-1-2-1"></use>
+                            </svg>
+                        </a></li>
+                        <li class="social_media_item"><a class="social_media_link link" href="#">
+                            <svg class="social_media_icon" width="20" height="20">
+                                <use href = "./images/symbol-defs.svg#icon-linkedin-1-2-1"></use>
+                            </svg>
+                        </a></li>
                     </ul>
                 </li>
             </ul></div>
@@ -202,7 +264,7 @@
     </section>
     <section class="portfolio">
     <div class="container portfolio-container">
-        <p class="portfolio-top-p">IN LATIN, "BARBA" MEANS "BEARD"</p>
+        <p class="portfolio-top-p paragraph-before">IN LATIN, "BARBA" MEANS "BEARD"</p>
         <ul class="portfolio-list">
             <li class="portfolio-item">
                 <img class="portfolio-img" src="./images/barberspic1.jpg" alt="pic1" width="270" heigth="360">
@@ -277,14 +339,13 @@
 
 
 <ul class="footer-list">
-    <li class="footer-item"> <a  class="footer-link" href="">_______</a></li>
-    <li class="footer-item"> <a  class="footer-link" href="">Instagram</a></li>
+    <li class="footer-item paragraph-before"> <a  class="footer-link" href="">Instagram</a></li>
     <li class="footer-item"> <a  class="footer-link" href="">Youtube</a></li>
 </ul>
 </div>
 </footer>
 
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal >
     <div class="modal">
         <button type="button" class="modal-close" data-modal-close>X</button>
         

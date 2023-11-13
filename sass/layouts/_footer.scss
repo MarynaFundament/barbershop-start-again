@@ -13,17 +13,18 @@
 
 .footer-top-p {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, rgba(157, 164, 189, 1));
+  
  
 }
-.footer-span {
 
-}
 .footer-list {
     display: flex;
     gap: 40px
 }
 .footer-item {
-
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-link {

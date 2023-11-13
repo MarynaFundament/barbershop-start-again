@@ -4,39 +4,46 @@
 
 
 .hero-container{
-    display: flex;
+display: flex;
 }
 
 .hero_networks{
-   background-color: #fff;
-   width: 100px;
+background-color: #fff;
+width: 100px;
 
-   display: flex;
-   align-items: flex-end;
+display: flex;
+align-items: flex-end;
   
 }
 
-.hero-span {
-}
 
 .network_list{
-    display: flex;
-    gap: 40px;
-    margin-top: 15px;
+display: flex;
+gap: 40px;
+margin-top: 15px;
 
-    transform: rotate(-90deg) translateY(100%);
-    transform-origin: bottom left;
-
-}
-
-.hero-Instagram {
-@include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+transform: rotate(-90deg) translateY(100%);
+transform-origin: bottom left;
 
 }
 
-
-.hero-Youtube {
+.a-network{
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+}
+
+.span-instagram{
+display: flex;
+align-items: center;
+gap: 17px    
+
+}
+
+.span-instagram::before{
+content: '';
+width: 60px;
+height: 1px;
+background-color: currentColor;
+display: block;
 
 }
 
@@ -52,14 +59,15 @@ align-items: center;
 gap: 20px
 }
 
-.hero-head-pargraph::before{
-
-    content: '';
-    width: 60px;
-    height: 1px;
-    background-color: currentColor;
+.paragraph-before::before{
+content: '';
+width: 60px;
+height: 1px;
+background-color: currentColor;
+display: block;
  
 }
+
 
 .hero-header {
 @include font(var(--primary-font), 700, 72px, 1.18, 0.02em, var(--primary-text-color));
@@ -98,11 +106,40 @@ margin-bottom: 20px;
 min-width: 360px;
 }
 
-.hero-back-span {
-
+.decor-button_list {
+    margin-right: 20px;
+    display: flex;
+    gap:10px;
 }
 
-.hero-forward-span {
+.decor-button_item1 {
+    @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
+.decor-button_item1::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    display: block;
+}
+
+
+.decor-button_item2 {
+    @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.decor-button_item2::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    display: block;
 }
 

@@ -10,8 +10,11 @@
 
 .portfolio-top-p {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
-
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
 .portfolio-list {
     margin-top: 44px;
     display: flex;

@@ -2,11 +2,20 @@
     padding-top: 130px;
     padding-bottom: 110px;
     width: 50%;
+ 
 
+    padding-left: 105px;
+    background-image:
+    url(../../images/Background_services.png),
+    linear-gradient(180deg, 
+    rgba(23, 26, 36, 1),
+    rgba(23, 26, 36, 0.2));
+     ;
 
+     background-size: cover;
 }
 .contacts-header {
-    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
 
 }
 .contacts-list {

@@ -1,7 +1,6 @@
 .about {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: aqua;
     
 }
 
@@ -28,7 +27,9 @@
 
 .about-top-paragraph {
     @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--title-text-color2));
-    
+    display: flex;
+    align-items: center;
+    gap:20px
 }
 
 .about-header {
@@ -45,6 +46,14 @@
     @include font(var(--primary-font), 400, 14px, 1.86, 2%, var(--primary-text-color));
     margin-top: 20px;
 }
+
+.about-before::before{
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+     
+    }
 
 .about-button {
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color2));

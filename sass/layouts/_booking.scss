@@ -12,13 +12,11 @@
 .booking {
     padding-top: 130px;
     padding-bottom: 110px;
-    background-color: aqua;
     width:50%;
-}
-
-.booking-container{
     background-color: rgba(25, 28, 38, 1);
 }
+
+
 
 .booking-header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
@@ -70,7 +68,7 @@
 }
 
 .form-input::placeholder{
-   color: aqua;
+   color: #fff;
     
 }
 

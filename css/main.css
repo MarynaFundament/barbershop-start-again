@@ -85,6 +85,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
 }
 
 .booking-modal-form {
@@ -226,7 +227,7 @@ img {
   transform-origin: bottom left;
 }
 
-.hero-Instagram {
+.a-network {
   font-family: var(--primary-text-color);
   font-weight: 600;
   font-size: 11px;
@@ -235,13 +236,18 @@ img {
   color: var(--primary-text-color);
 }
 
-.hero-Youtube {
-  font-family: var(--primary-text-color);
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+.span-instagram {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.span-instagram::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  display: block;
 }
 
 .hero-head-pargraph {
@@ -258,11 +264,12 @@ img {
   gap: 20px;
 }
 
-.hero-head-pargraph::before {
+.paragraph-before::before {
   content: "";
   width: 60px;
   height: 1px;
   background-color: currentColor;
+  display: block;
 }
 
 .hero-header {
@@ -323,10 +330,55 @@ img {
   min-width: 360px;
 }
 
+.decor-button_list {
+  margin-right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.decor-button_item1 {
+  font-family: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.decor-button_item1::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  display: block;
+}
+
+.decor-button_item2 {
+  font-family: var(--primary-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.decor-button_item2::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  display: block;
+}
+
 .about {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: aqua;
 }
 
 .about-container {
@@ -352,6 +404,9 @@ img {
   line-height: 1.36;
   letter-spacing: 0.02em;
   color: var(--title-text-color2);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .about-header {
@@ -382,6 +437,13 @@ img {
   letter-spacing: 2%;
   color: var(--primary-text-color);
   margin-top: 20px;
+}
+
+.about-before::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .about-button {
@@ -418,6 +480,9 @@ img {
   line-height: 1.36;
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .services-header {
@@ -443,18 +508,18 @@ img {
 }
 
 .services-list:first-child {
-  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background-image: linear-gradient(180deg, rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
 }
 
 .services-list:last-child {
-  background-image: linear-gradient(180deg, rgb(9, 11, 19) 0%, rgba(9, 11, 19, 0.2) 100%);
+  background-image: linear-gradient(180deg, rgb(9, 11, 19), rgba(9, 11, 19, 0.2));
 }
 
 .services-item {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.1;
   letter-spacing: 2%;
   color: var(--paragraph-text-color);
   display: flex;
@@ -465,10 +530,8 @@ img {
 
 .services-item::before {
   content: "";
-  width: 100px;
   height: 1px;
-  background-color: #fff;
-  width: 100%;
+  background-color: rgba(157, 164, 189, 0.6);
   flex-grow: 1;
 }
 
@@ -479,10 +542,7 @@ img {
   line-height: 1.66;
   letter-spacing: 2%;
   color: var(--paragraph-text-color);
-  display: inline-block;
-}
-
-.services-p-list {
+  display: block;
   order: -1;
 }
 
@@ -510,7 +570,6 @@ img {
 .reasons {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: yellow;
 }
 
 .reasons-container {
@@ -524,13 +583,16 @@ img {
   flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
+  align-items: center;
 }
 
 .reasons-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 170px;
   height: 133px;
   padding: 20px 24px;
-  text-align: center;
   background-color: rgb(247, 247, 247);
 }
 
@@ -549,6 +611,16 @@ img {
   line-height: 1.36;
   letter-spacing: 5%;
   color: var(--title-text-color2);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin: auto;
+}
+
+.reasons-list-span::after {
+  content: "+";
+  font-size: 20px;
+  color: #FF6C00;
 }
 
 .reasons-list-p {
@@ -558,6 +630,7 @@ img {
   line-height: 1.36;
   letter-spacing: 5%;
   color: var(--title-text-color2);
+  text-align: center;
 }
 
 .reasons-el-container {
@@ -572,6 +645,9 @@ img {
   letter-spacing: 2%;
   color: var(--title-text-color2);
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .reasons-header {
@@ -596,7 +672,7 @@ img {
 .barbers {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: aqua;
+  background-color: #F7F7F7;
 }
 
 .barbers-top-p {
@@ -606,6 +682,10 @@ img {
   line-height: 1.36;
   letter-spacing: 2%;
   color: var(--title-text-color2);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .barbers-header {
@@ -646,6 +726,12 @@ img {
   color: var(--accent-color);
 }
 
+.image-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .social_media_list {
   margin-top: 30px;
   display: flex;
@@ -662,7 +748,7 @@ img {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-color: tomato;
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -682,6 +768,9 @@ img {
   line-height: 1.36;
   letter-spacing: 2%;
   color: var(--title-text-color2);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .portfolio-list {
@@ -702,11 +791,7 @@ img {
 .booking {
   padding-top: 130px;
   padding-bottom: 110px;
-  background-color: aqua;
   width: 50%;
-}
-
-.booking-container {
   background-color: rgb(25, 28, 38);
 }
 
@@ -754,15 +839,15 @@ img {
 }
 
 .form-input::-moz-placeholder {
-  color: aqua;
+  color: #fff;
 }
 
 .form-input:-ms-input-placeholder {
-  color: aqua;
+  color: #fff;
 }
 
 .form-input::placeholder {
-  color: aqua;
+  color: #fff;
 }
 
 .booking-button {
@@ -789,6 +874,9 @@ img {
   padding-top: 130px;
   padding-bottom: 110px;
   width: 50%;
+  padding-left: 105px;
+  background-image: url(../../images/Background_services.png), linear-gradient(180deg, rgb(23, 26, 36), rgba(23, 26, 36, 0.2));
+  background-size: cover;
 }
 
 .contacts-header {
@@ -797,7 +885,7 @@ img {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 5%;
-  color: var(--title-text-color2);
+  color: var(--title-text-color);
 }
 
 .contacts-address {
@@ -858,6 +946,12 @@ img {
 .footer-list {
   display: flex;
   gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .footer-link {
