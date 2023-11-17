@@ -9,26 +9,26 @@
 
 
 
-.services-paragraph {
+.services_paragraph {
     @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
     display: flex;
     align-items: center;
     gap:20px
 }
 
-.services-header {
+.services_header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
     margin-top: 20px;
 }
 
 
-.lists-container{
+.lists_container{
     display: flex;
     justify-content: space-between;
 
 }
 
-.services-list {
+.services_list {
     border: 1px solid green;
     margin-top: 44px;
     padding: 30px 20px;
@@ -38,7 +38,7 @@
 }
 
 
-.services-list:first-child {
+.services_list:first-child {
     background-image: 
 
  linear-gradient(180deg, 
@@ -48,7 +48,7 @@
 }
 
 
-.services-list:last-child {
+.services_list:last-child {
     background-image:
 
     linear-gradient(180deg, 
@@ -59,7 +59,7 @@
   
 }
 
-.services-item {
+.services_item {
     @include font(var(--primary-font), 400, 18px, 1.10, 2%, var(--paragraph-text-color));
     
     display: flex;
@@ -70,7 +70,7 @@
 }
 
 
-.services-item::before{
+.services_item::before{
     content: '';
     height: 1px;
     background-color: rgba(157, 164, 189, 0.6);
@@ -78,7 +78,7 @@
 }
 
 
-.services-p-list {
+.services_p-list {
     @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--paragraph-text-color));
     display: block;
     order:-1;
@@ -88,13 +88,13 @@
 
 
 
-.services-s-list {
+.services_s-list {
   
    
 }
 
 
-.services-button {
+.services_button {
 
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color));
 

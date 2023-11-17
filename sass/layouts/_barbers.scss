@@ -5,11 +5,11 @@
    
 }
 
-.barbers-container{
+.barbers_container{
    
 }
 
-.barbers-top-p {
+.barbers_top-p {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
     text-transform: uppercase;
     display: flex;
@@ -17,39 +17,39 @@
     gap:20px;
 
 }
-.barbers-header {
+.barbers_header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
     margin-top: 20px;
 }
-.barbers-list {
+.barbers_list {
     margin-top: 44px;
     display: flex;
     gap: 30px;
 
 }
 
-.barbers-item {
+.barbers_item {
     width: calc((100% - 60px)/3)
 }
 
-.barbers-img {
+.barbers_img {
 }
 
-.barbers-h-pictures {
+.barbers_h-pictures {
     @include font(var(--primary-font), 400, 18px, 1.36, 2%, var(--primary-text-color));
 }
 
-.barbers-p-pictures {
+.barbers_p-pictures {
     @include font(var(--primary-font), 600, 14px, 1.36, 2%, var(--accent-color));
 }
 
-.image-caption{
+.image_caption{
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.social_media_list {
+.social_media-list {
     margin-top: 30px;
 
     display: flex;
@@ -58,12 +58,12 @@
     
 }
 
-.social_media_item {
+.social_media-item {
     width: 44px;
     height: 44px;
 }
 
-.social_media_link {
+.social_media-link {
     display: inline-block;
     width: 100%;
     height: 100%;

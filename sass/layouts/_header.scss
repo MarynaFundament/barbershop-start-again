@@ -5,36 +5,36 @@
 
 }
 
-.header-container{
+.header_container{
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.header_logo {
 }
 
 
 
-.header-navigation-list {
+.header_navigation-list {
     display: flex;
     margin-left: 100px;
     gap: 30px;
 }
 
-.header-navigation-item {
+.header_navigation-item {
     @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
  
 }
 
-.header-navigation-link {
+.header_navigation-link {
 }
 
-.header-navigation-tel {
+.header_navigation-tel {
     @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
     margin-left: 254px ;
 }
 
-.header-navigation-button {
+.header_navigation-button {
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color));
     margin-left: 43px;
     padding-right: 20px;

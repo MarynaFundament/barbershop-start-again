@@ -3,7 +3,7 @@
 }
 
 
-.hero-container{
+.hero_container{
 display: flex;
 }
 
@@ -27,18 +27,18 @@ transform-origin: bottom left;
 
 }
 
-.a-network{
+.a_network{
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
 }
 
-.span-instagram{
+.span_instagram{
 display: flex;
 align-items: center;
 gap: 17px    
 
 }
 
-.span-instagram::before{
+.span_instagram::before{
 content: '';
 width: 60px;
 height: 1px;
@@ -47,7 +47,7 @@ display: block;
 
 }
 
-.hero-head-pargraph {
+.hero_head-pargraph {
 @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
 
 margin-top: 92px;
@@ -59,7 +59,7 @@ align-items: center;
 gap: 20px
 }
 
-.paragraph-before::before{
+.paragraph_before::before{
 content: '';
 width: 60px;
 height: 1px;
@@ -69,57 +69,57 @@ display: block;
 }
 
 
-.hero-header {
+.hero_header {
 @include font(var(--primary-font), 700, 72px, 1.18, 0.02em, var(--primary-text-color));
 margin-bottom: 20px;
 
 }
 
-.hero-bottom-paragraph {
+.hero_bottom-paragraph {
 @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
 
 margin-bottom: 208px;
 }
 
 
-.hero-wrap{
+.hero_wrap{
  background-image: url(../../images/Slider\ img\ 3.jpg);
  padding: 272px 100px 208px 100px;
  flex-grow: 1;
  background-size: cover;
 }
 
-.hero-head-pargraph {
+.hero_head-pargraph {
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
 margin-top: 0;
 margin-bottom: 20px;
 }
 
-.hero-header {
+.hero_header {
 @include font(var(--additional-font), 700, 72px, 1.18, 5%, var(--title-text-color));
 margin-bottom: 20px;
 
 }
 
-.hero-bottom-paragraph {
+.hero_bottom-paragraph {
 @include font(var(--primary-text-color), 400, 18px, 1.66, 2%, var(--primary-text-color));
 min-width: 360px;
 }
 
-.decor-button_list {
+.decor_button_list {
     margin-right: 20px;
     display: flex;
     gap:10px;
 }
 
-.decor-button_item1 {
+.decor_button_item1 {
     @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.decor-button_item1::after {
+.decor_button_item1::after {
     content: '';
     width: 60px;
     height: 1px;
@@ -128,14 +128,14 @@ min-width: 360px;
 }
 
 
-.decor-button_item2 {
+.decor_button_item2 {
     @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.decor-button_item2::after {
+.decor_button_item2::after {
     content: '';
     width: 60px;
     height: 1px;

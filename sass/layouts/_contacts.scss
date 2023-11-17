@@ -14,30 +14,30 @@
 
      background-size: cover;
 }
-.contacts-header {
+.contacts_header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
 
 }
-.contacts-list {
+.contacts_list {
     
 }
-.contacts-item {
+.contacts_item {
 }
 
-.contacts-address{
+.contacts_address{
     @include font(var(--primary-font), 700, 18px, 1.66, 2%, var(--primary-text-color));
 
 }
 
-.contacts-link {
+.contacts_link {
     @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
 
 }
-.contacts-span {
+.contacts_span {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--primary-text-color));
 
 }
-.contacts-bottom-p {
+.contacts_bottom-p {
     @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
 
 }

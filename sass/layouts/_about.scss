@@ -4,50 +4,50 @@
     
 }
 
-.about-container{
+.about_container{
     display: flex;
     gap: 30px;
 }
 
-.about-list {
+.about_list {
     display: flex;
     gap: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.about-block{
+.about_block{
     min-width: 480px;
    
 }
 
-.about-item {
+.about_item {
 
 }
 
-.about-top-paragraph {
+.about_top-paragraph {
     @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--title-text-color2));
     display: flex;
     align-items: center;
     gap:20px
 }
 
-.about-header {
+.about_header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
     margin-top: 20px;
 }
 
-.about-bottom-paragraph {
+.about_bottom-paragraph {
     @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
     margin-top: 20px;
 }
 
-.about-main-text {
+.about_main-text {
     @include font(var(--primary-font), 400, 14px, 1.86, 2%, var(--primary-text-color));
     margin-top: 20px;
 }
 
-.about-before::before{
+.about_before::before{
     content: '';
     width: 60px;
     height: 1px;
@@ -55,7 +55,7 @@
      
     }
 
-.about-button {
+.about_button {
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color2));
     display: block;
     
