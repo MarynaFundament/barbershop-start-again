@@ -4,30 +4,30 @@
     // background-color: green;
 }
 
-.footer-container{
+.footer_container{
     display: flex;
     // align-items: baseline;
     gap: 753px;
 
 }
 
-.footer-top-p {
+.footer_top-p {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, rgba(157, 164, 189, 1));
   
  
 }
 
-.footer-list {
+.footer_list {
     display: flex;
     gap: 40px
 }
-.footer-item {
+.footer_item {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.footer-link {
+.footer_link {
     @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--primary-text-color));
 
 }
