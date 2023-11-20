@@ -37,6 +37,9 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .button {
@@ -170,13 +173,16 @@ img {
   gap: 30px;
 }
 
-.header_navigation-item {
+.header_navigation-link {
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.1em;
   color: var(--title-text-color);
+}
+.header_navigation-link:hover, .header_navigation-link:focus {
+  color: var(--accent-color);
 }
 
 .header_navigation-tel {
@@ -187,6 +193,9 @@ img {
   letter-spacing: 0.1em;
   color: var(--title-text-color);
   margin-left: 254px;
+}
+.header_navigation-tel:hover, .header_navigation-tel:focus {
+  color: var(--accent-color);
 }
 
 .header_navigation-button {
@@ -222,7 +231,7 @@ img {
 .network_list {
   display: flex;
   gap: 40px;
-  margin-top: 15px;
+  align-items: center;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
 }
@@ -234,6 +243,9 @@ img {
   line-height: 1.36;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.a_network:hover, .a_network:focus {
+  color: var(--accent-color);
 }
 
 .span_instagram {
@@ -567,6 +579,107 @@ img {
   background-color: transparent;
 }
 
+.reasons {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.reasons_container {
+  display: flex;
+  gap: 130px;
+}
+
+.reasons_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.reasons_item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 170px;
+  height: 133px;
+  background-color: rgb(247, 247, 247);
+}
+
+.reasons_item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.reasons_item:nth-child(even) {
+  margin-top: 30px;
+}
+
+.reasons-list_span {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 5%;
+  color: var(--title-text-color2);
+  display: flex;
+  margin: auto;
+}
+
+.reasons-list_span::after {
+  content: "+";
+  font-size: 20px;
+  color: #FF6C00;
+}
+
+.reasons_list-p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 5%;
+  color: var(--title-text-color2);
+  padding: 6px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.reasons_el-container {
+  padding-top: 9px;
+}
+
+.reasons_top-p {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 2%;
+  color: var(--title-text-color2);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reasons_header {
+  font-family: var(--additional-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 5%;
+  color: var(--title-text-color2);
+  margin-bottom: 20px;
+}
+
+.reasons-bottom_p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 2%;
+  color: var(--primary-text-color);
+}
+
 .barbers {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -652,6 +765,11 @@ img {
   align-items: center;
   justify-content: center;
   fill: black;
+  cursor: pointer;
+}
+
+.social_media-icon:hover, .social_media-icon:focus {
+  fill: var(--accent-color);
 }
 
 .portfolio {
@@ -659,7 +777,7 @@ img {
   padding-bottom: 120px;
 }
 
-.portfolio_top-p {
+.portfolio-top-p {
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 11px;
@@ -671,7 +789,7 @@ img {
   gap: 20px;
 }
 
-.portfolio_list {
+.portfolio-list {
   margin-top: 44px;
   display: flex;
   gap: 30px;
@@ -724,16 +842,25 @@ img {
 
 .higher_form-el {
   width: 270px;
+  height: 40px;
   border-color: transparent;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-left: 5px;
+}
+.higher_form-el:hover {
+  border-bottom: 1px solid var(--title-text-color);
 }
 
 .form_message {
   width: 100%;
-  height: 76px;
+  height: 100px;
   resize: none;
+  padding-left: 5px;
   border-color: transparent;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.form_message:hover {
+  border-bottom: 1px solid var(--title-text-color);
 }
 
 .form_input::-moz-placeholder {

@@ -20,15 +20,24 @@ align-items: flex-end;
 .network_list{
 display: flex;
 gap: 40px;
-margin-top: 15px;
+align-items: center;
 
 transform: rotate(-90deg) translateY(100%);
 transform-origin: bottom left;
 
 }
 
+.li_network{
+
+}
+
 .a_network{
 @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+
+&:hover,
+&:focus{
+color:var(--accent-color); 
+}
 }
 
 .span_instagram{

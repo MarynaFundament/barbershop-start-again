@@ -14,7 +14,6 @@
 }
 
 
-
 .header_navigation-list {
     display: flex;
     margin-left: 100px;
@@ -22,16 +21,27 @@
 }
 
 .header_navigation-item {
-    @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
  
 }
 
 .header_navigation-link {
+    @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
+
+    &:hover,
+    &:focus{
+    color:var(--accent-color); 
+   }
+
 }
 
 .header_navigation-tel {
     @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
     margin-left: 254px ;
+    
+    &:hover,
+    &:focus{
+    color:var(--accent-color); 
+   }
 }
 
 .header_navigation-button {

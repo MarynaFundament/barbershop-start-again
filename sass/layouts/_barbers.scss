@@ -76,4 +76,16 @@
     justify-content: center;
 
     fill: black;
+
+    cursor: pointer;
+
+  
+}
+
+.social_media-icon{
+    &:hover,
+    &:focus{
+    fill:var(--accent-color); 
+}
+    
 }
