@@ -1,22 +1,58 @@
 .reasons {
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+
+    @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
     padding-top: 120px;
     padding-bottom: 120px;
+
+    }
 }
 
 
 .reasons_container {
     display: flex;
+    flex-direction: column-reverse;
+    gap: 44px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column-reverse;
+    
+        }
+    
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
     gap: 130px;
+        }
    
 }
 
 .reasons_list {
     display: flex;
     flex-wrap: wrap;
-    width: 370px;
-
+    
     margin-top: 0;
     margin-bottom: 0;
+
+    width: 418px;
+     
+    
+    @media screen and (min-width: 768px) {
+    width: 450px;
+    align-self:  flex-end;
+
+            }
+        
+    @media screen and (min-width: 1200px) {
+    width: 370px;
+            }
 
     
 }
@@ -26,11 +62,19 @@
     flex-wrap: wrap;
     gap: 6px;
 
-    width: 170px;
+    width: 194px;
     height: 133px;
 
     
-    background-color: rgba(247, 247, 247, 1); 
+    background-color: rgba(247, 247, 247, 1);
+    
+    @media screen and (min-width: 768px) {
+       
+                }
+            
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+                }
 }
 
 
@@ -45,46 +89,59 @@
 }
 
 .reasons-list_span{
-@include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
-display: flex;
+    @include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
+    display: flex;
 
-margin:auto;
+    margin: auto;
 
 }
 
 .reasons-list_span::after{
- content: '+';
- font-size: 20px;
- color: #FF6C00;
+    content: '+';
+    font-size: 20px;
+    color: #FF6C00;
 
 }
 
 .reasons_list-p{
-@include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
-padding: 6px;
-margin-bottom: 16px;
+    @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
+    padding: 6px;
+    margin-bottom: 16px;
 
-text-align: center;
+    text-align: center;
 }
 
 .reasons_el-container{
-padding-top: 9px;
+    padding-top: 9px;
+
 }
 
 .reasons_top-p {
 @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+
 margin-bottom: 20px;
 display: flex;
 align-items: center;
 gap: 20px;
 
 }
+
 .reasons_header {
 @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
 margin-bottom: 20px;
 
 }
-.reasons-bottom_p {
+.reasons_bottom-p {
 @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    width: 100%;
+    margin-left: 0;
 
+
+@media screen and (min-width: 768px) {
+    width: 500px;    
+}
+
+@media screen and (min-width: 1200px) {
+    width: 500px; 
+}
 }

@@ -1,13 +1,30 @@
 .header {
+    background-color: transparent;
+   
+    @media screen and (min-width: 768px) {
     background-color: grey;
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+  
 
 }
 
 .header_container{
-  display: flex;
+  display: none;
   align-items: center;
+
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+  @media screen and (min-width: 1200px) {
+
+
+}
 }
 
 .header_logo {
@@ -16,8 +33,14 @@
 
 .header_navigation-list {
     display: flex;
-    margin-left: 100px;
-    gap: 30px;
+    gap: 20.13px;
+
+  
+    
+    @media screen and (min-width: 1200px) {
+        gap: 30px;
+    
+    }
 }
 
 .header_navigation-item {
@@ -32,11 +55,26 @@
     color:var(--accent-color); 
    }
 
+  
+}
+
+.header_contacts{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row
+  
+  }
+
+
 }
 
 .header_navigation-tel {
     @include font(var(--primary-font), 600, 12px, 1.22, 0.1em, var( --title-text-color));
-    margin-left: 254px ;
     
     &:hover,
     &:focus{
@@ -46,7 +84,7 @@
 
 .header_navigation-button {
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color));
-    margin-left: 43px;
+
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10.83px;

@@ -8,6 +8,14 @@ height: 100%;
 background-color: rgba(48, 48, 48, 0.563);
 }
 
+.is_hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+}
+
+
 
 .modal{
     width: 500px;
@@ -33,12 +41,7 @@ background-color: rgba(48, 48, 48, 0.563);
     background-color: transparent;
 }
 
-.is_hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    display: none;
-}
+
 
 
 .booking_modal-form {
@@ -54,6 +57,8 @@ background-color: rgba(48, 48, 48, 0.563);
     width: 400px;
 }
 
+.modal_button {
+}
 
 .booking_modal-form::placeholder{
     margin-left: 10px;

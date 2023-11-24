@@ -1,4 +1,6 @@
 .hero {
+
+    
     
 }
 
@@ -13,6 +15,18 @@ width: 100px;
 
 display: flex;
 align-items: flex-end;
+
+
+@media screen and (min-width: 768px) {
+   
+
+    }
+
+@media screen and (min-width: 1200px) {
+   
+
+    }
+
   
 }
 
@@ -24,6 +38,17 @@ align-items: center;
 
 transform: rotate(-90deg) translateY(100%);
 transform-origin: bottom left;
+display: none;
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+}
 
 }
 
@@ -79,8 +104,21 @@ display: block;
 
 
 .hero_header {
-@include font(var(--primary-font), 700, 72px, 1.18, 0.02em, var(--primary-text-color));
+@include font(var(--primary-font), 700, 42px, 1.18, 0.02em, var(--primary-text-color));
 margin-bottom: 20px;
+
+
+@media screen and (min-width: 768px) {
+
+@include font(var(--primary-font), 700, 72px, 1.18, 0.02em, var(--primary-text-color));
+
+}
+
+@media screen and (min-width: 1200px) {
+
+@include font(var(--primary-font), 700, 72px, 1.18, 0.02em, var(--primary-text-color));
+
+}
 
 }
 
@@ -93,32 +131,97 @@ margin-bottom: 208px;
 
 .hero_wrap{
  background-image: url(../../images/Slider\ img\ 3.jpg);
- padding: 272px 100px 208px 100px;
+ background-position: center;
+ background-size: cover;
+ background-size: contain;
+
+ width: 100%;
+ padding-left: 30px;
+ padding-top: 210px;
  flex-grow: 1;
  background-size: cover;
+ margin-left: 0;
+
+ @media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+padding: 272px 100px 208px 100px;
+
+
+}
 }
 
 .hero_head-pargraph {
-@include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+@include font(var(--primary-text-color), 600, 9px, 1.36, 0.02em, var(--primary-text-color));
 margin-top: 0;
 margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+    @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    @include font(var(--primary-text-color), 600, 11px, 1.36, 0.02em, var(--primary-text-color));
+
+
+}
+
 }
 
 .hero_header {
-@include font(var(--additional-font), 700, 72px, 1.18, 5%, var(--title-text-color));
+@include font(var(--additional-font), 700, 42px, 1.18, 5%, var(--title-text-color));
 margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    @include font(var(--additional-font), 700, 72px, 1.18, 5%, var(--title-text-color));
+
+
+}
 
 }
 
 .hero_bottom-paragraph {
-@include font(var(--primary-text-color), 400, 18px, 1.66, 2%, var(--primary-text-color));
+@include font(var(--primary-text-color), 400, 12px, 1.66, 2%, var(--title-text-color));
 min-width: 360px;
+
+@media screen and (min-width: 768px) {
+
+    @include font(var(--primary-text-color), 400, 18px, 1.66, 2%, var(--title-text-color));
+
 }
 
-.decor_button_list {
+@media screen and (min-width: 1200px) {
+    @include font(var(--primary-text-color), 400, 18px, 1.66, 2%, var(--title-text-color));
+
+
+}
+}
+
+.decor_button-list {
     margin-right: 20px;
     display: flex;
     gap:10px;
+    display: none;
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+}
 }
 
 .decor_button_item1 {

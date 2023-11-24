@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF_8">
     <meta http_equiv="X_UA_Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device_width, initial_scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page barber shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern_normalize/2.0.0/modern_normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -14,11 +13,11 @@
 <body>
 
 
- <!-- <header class="header">
+ <header class="header">
     <div class="container header_container">
-        <a href="/">
+        <!-- <a href="/">
             <img class="header_logo" src="./images/Logo barber.jpeg" alt="barber" width = "80" height = "80">
-        </a>
+        </a> -->
         <nav>
                 <ul class="header_navigation-list" >
                     <li class="header_navigation-item"> <a class="header_navigation-link" href="#about">About</a></li>
@@ -28,19 +27,18 @@
                   
                 </ul>
         </nav>
-        
-        <a  class="header_navigation-tel" href="tel:+38 044 111 11 11"> +38 044 111 11 11</a>
-        <button  class="header_navigation-button" type="button" data_modal_open> ONLINE_BOOKING </button>
-      
-        
-               
-      
+
+        <div class="header_contacts">
+            <a  class="header_navigation-tel" href="tel:+38 044 111 11 11"> +38 044 111 11 11</a>
+            <button class="header_navigation-button" type="button" > ONLINE-BOOKING </button>
+        </div>
+    
     </div>
    
- </header>  -->
+ </header>  
 
  <main>
-    <!-- <section class="hero"> 
+    <section class="hero"> 
         <div class="container hero_container">
 
             <div class="hero_networks">
@@ -65,13 +63,13 @@
            </ul>
         </div>
         
-    </section>
+    </section> 
     <section class="about" id="about">
     <div class="container about_container">
         
             <ul class="about_list" >
-                <li class="about_item" ><img src="./images/Barbershopimg1.jpg" alt="Barber photo1" width="270" height="445"></li>
-                <li class="about_item" ><img src="./images/Barbershopimg2.jpg" alt="Barber photo" width="270" height="445"></li>
+                <li class="about_item" ><img src="./images/Barbershopimg1.jpg" alt="Barber photo1"></li>
+                <li class="about_item" ><img src="./images/Barbershopimg2.jpg" alt="Barber photo"></li>
             </ul>
             <div class="about_block">
                 <p class="about_top-paragraph paragraph_before" >ABOUT</p>
@@ -84,7 +82,7 @@
                      the same wave" with clients. Therefore, we are always ready to <br>
                      improve everyone who comes to us!
                 </p>
-                <button  class="about_button" type="button">ONLINE_BOOKING</button>
+                <button class="about_button" type="button" data-modal-open>ONLINE-BOOKING</button>
             </div>
             
         </div>
@@ -134,7 +132,7 @@
         </div>
         
       
-        <button  class="services_button" type="button">ONLINE BOOKING</button>
+        <button  class="services_button" type="button" data-modal-open>ONLINE BOOKING</button>
     </div>
     </section>
     <section class="reasons"> 
@@ -150,13 +148,13 @@
         <div class="reasons_el-container">
             <p class="reasons_top-p paragraph_before" >OLD TRADITIONAL SCHOOL</p>
             <h2 class="reasons_header" >¿Why people come <br> to us?</h2>
-            <p class="reasons_bottom-p" >Only good things are said about us. But it's better to see<br>
+            <p class="reasons_bottom-p" >Only good things are said about us. But it's better to see
                and feel 1 time than read 10 times. </p>
         </div>
        
         </div>   
-    </section>
-    <section class="barbers" id="barbers">
+    </section> 
+  <section class="barbers" id="barbers">
         <div class="container barbers_container">
 
         <p class="barbers_top-p paragraph_before" >For true enjoyers of the atmosphere</p>
@@ -262,7 +260,7 @@
                 </li>
             </ul></div>
         
-    </section> -->
+    </section> 
     <section class="portfolio">
     <div class="container portfolio_container">
         <p class="portfolio_top-p paragraph_before">IN LATIN, "BARBA" MEANS "BEARD"</p>
@@ -277,11 +275,11 @@
     </div>
 
   </section>
-    <!-- <section class = "booking_contacts">
+     <section class = "booking_contacts">
     <div class="common_container container">
     <div class="booking" id="contacts">
         <div class="container booking_container">
-        <h2 class="booking_header">Online_booking</h2>
+        <h2 class="booking_header">Online-booking</h2>
 
        
     <form class="booking_form">
@@ -314,6 +312,7 @@
   
     <div class="contacts">
         <h2 class="contacts_header">Contacts</h2>
+    <div class="contacts-flex">
         <ul class="contacts_list">
                 <li class="contacts_item"> <a  class="contacts_link contacts_address" href=#>st. Vasilkivska, 7A
                     Kyiv, 08132</a>
@@ -323,18 +322,22 @@
                 <li class="contacts_item"><a  class="contacts_link" href="mailto:barbershop@email.com">barbershop@email.com</a>
                 </li>
         </ul>
-    
-        <span class="contacts_span">WORKING HOURS</span>
-        <p class="contacts_bottom-p"> Every day from 9:00 to 22:00</p>
+
+        <div class="contacts_addition-container">
+            <span class="contacts_span">WORKING HOURS</span>
+            <p class="contacts_bottom-p"> Every day from 9:00 to 22:00</p>
+        </div>
+    </div>
+       
      </div>
 
     </div>
-    </section>  -->
+    </section>  
     
  </main> 
 
 
-<!-- <footer class="footer">
+<footer class="footer">
 <div class="container footer_container">
 <p class="footer_top-p">Copyright 2020</p>
 
@@ -344,21 +347,21 @@
     <li class="footer_item"> <a  class="footer_link" href="">Youtube</a></li>
 </ul>
 </div>
-</footer> -->
+</footer>
 
-<!-- <div class="backdrop is_hidden" data_modal >
+<div class="backdrop is_hidden" data-modal >
     <div class="modal">
-        <button type="button" class="modal_close" data_modal_close>X</button>
+        <button type="button" class="modal_close" data-modal-close >X</button>
         
-        <form class="booking_modal_form">
+        <form class="booking_modal-form">
             <div class="modal_el">
                 <input type="text"
-                 class="modal_input higher_modal_el"
+                 class="modal_input higher_modal-el"
                  name = "modal_name"
                  placeholder="NAME*">
     
                 <input type="tel"
-                 class="modal_input higher_modal_el"
+                 class="modal_input higher_modal-el"
                  name = "modal_tel"
                  placeholder="PHONE*">
             </div>
@@ -375,7 +378,7 @@
         </form>
 
     </div>
-</div> -->
+</div> 
 
 <script src="./js/modal.js"></script>
     

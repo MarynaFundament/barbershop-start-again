@@ -1,29 +1,63 @@
 .about {
+    
+    padding-top: 84px;
+    padding-bottom: 84px;
+
+    @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
     padding-top: 120px;
     padding-bottom: 120px;
+
+    }
     
 }
 
 .about_container{
     display: flex;
     gap: 30px;
+    width: 100%;
+    
 }
 
 .about_list {
-    display: flex;
+    display: none;
     gap: 30px;
     margin-top: 0px;
     margin-bottom: 0px;
-}
+  
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
 
-.about_block{
-    min-width: 480px;
-   
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    }
 }
 
 .about_item {
+    width: 270px;
+    height: 445px;
 
+    @media screen and (min-width: 768px) {
+    // width: 330px;
+    // height: 100%;
+    
+        } 
 }
+
+.about_block{
+   
+}
+
+
 
 .about_top-paragraph {
     @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--title-text-color2));
@@ -33,18 +67,32 @@
 }
 
 .about_header {
-    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+    @include font(var(--additional-font), 700, 28px, 1.17, 5%, var(--title-text-color2));
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+
+    }
 }
 
 .about_bottom-paragraph {
-    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    @include font(var(--primary-font), 400, 16px, 1.66, 2%, var(--primary-text-color));
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+    
+        }
 }
 
 .about_main-text {
     @include font(var(--primary-font), 400, 14px, 1.86, 2%, var(--primary-text-color));
     margin-top: 20px;
+    display: block;
+    text-align: justify;
+
+
 }
 
 .about_before::before{
@@ -57,7 +105,6 @@
 
 .about_button {
     @include font(var(--primary-font), 600, 12px, 1.36, 9%, var(--title-text-color2));
-    display: block;
     
     margin-top: 42px;
     padding-right: 20px;
