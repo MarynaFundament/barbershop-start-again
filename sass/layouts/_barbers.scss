@@ -25,13 +25,25 @@
 }
 
 .barbers_top-p {
-    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+    @include font(var(--primary-font), 600, 9px, 1.36, 2%, var(--title-text-color2));
     text-transform: uppercase;
     display: flex;
     align-items: center;
     gap:20px;
 
+    @media screen and (min-width: 768px) {
+        @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+      
+    }
+    
+    @media screen and (min-width: 1200px) {
+        @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+    
+    }
+
 }
+
+
 .barbers_header {
     @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
     margin-top: 20px;

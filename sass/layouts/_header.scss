@@ -1,28 +1,64 @@
 .header {
+
     background-color: transparent;
-   
+
+    position: absolute; /* Додаємо позицію relative для абсолютного позиціонування дочірніх елементів */
+    z-index: 1;
+
+    
     @media screen and (min-width: 768px) {
-    background-color: grey;
+   
     padding-top: 22px;
     padding-bottom: 22px;
+
+    left: 55px;
+    width: 100%;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    // left: 200px;
+
+
   }
   
 
 }
 
+.header_menu-btn{
+height: 60px;
+// width: 500px;
+}
+
+
+.menu_open{
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+  margin-left: 250px;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+}
+
+}
+
 .header_container{
-  display: none;
+ 
   align-items: center;
 
 
   @media screen and (min-width: 768px) {
+    // margin-left: 55px;
     display: flex;
     justify-content: space-between;
 
 }
 
   @media screen and (min-width: 1200px) {
-
+    margin-right:54px;
+    justify-content: space-between;
 
 }
 }
@@ -34,12 +70,19 @@
 .header_navigation-list {
     display: flex;
     gap: 20.13px;
+    display: none;
 
+    @media screen and (min-width: 768px) {
+      // margin-left: 55px;
+      display: flex;
+    
+  
+  }
   
     
     @media screen and (min-width: 1200px) {
         gap: 30px;
-    
+        display: flex;
     }
 }
 
@@ -59,15 +102,24 @@
 }
 
 .header_contacts{
-    display: flex;
+   display: none;
+    
     flex-direction: column-reverse;
     gap: 20px;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+
+      display: flex;
+     
+  
+  }
+
 
     @media screen and (min-width: 1200px) {
-      flex-direction: row
-  
+    flex-direction: row;
+    display: flex;
+    margin-left: 190px
   }
 
 
@@ -94,9 +146,151 @@
     height: 36.11;
 
     border-radius: 25px;
-    border: 1px solid rgba(255, 108, 0, 1)
-    ;
+    border: 1px solid rgba(255, 108, 0, 1);
     background-color: transparent;
 
  
+}
+
+
+.mob-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 40px;
+
+  >.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: auto;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    display: none;
+}
+
+
+
+}
+
+
+.container {
+}
+
+
+.menu_open {
+
+  @media screen and (min-width: 768px) {
+    display: none;
+}
+}
+
+.menu-close_btn{
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+  margin-left: 220px;
+  margin-top: 20px;
+
+}
+
+
+.menu-list {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+
+.menu-list_item {
+
+}
+
+
+.menu-list_link {
+
+  @include font(var(--primary-font), 600, 18px, 1.22, 0.1em, black);
+
+  &:hover,
+  &:focus{
+  color:var(--accent-color); 
+ }
+}
+
+.menu-list_contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+
+  margin-bottom: 69px;
+}
+
+
+.menu-list_tel {
+  @include font(var(--primary-font), 600, 18px, 1.22, 0.1em, black);
+
+
+}
+
+
+
+.menu-list_button {
+
+  @include font(var(--primary-font), 600, 12px, 1.36, 9%, black);
+
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10.83px;
+    padding-bottom: 10.83px;
+
+    width: 194px;
+    height: 40px;
+
+    border-radius: 25px;
+    border: 1px solid rgba(255, 108, 0, 1);
+    background-color: transparent;
+
+}
+
+
+.menu-list_network {
+
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+
+  
+}
+
+
+.menu-list_a {
+
+  @include font(var(--primary-text-color), 600, 14px, 1.36, 0.02em, black);
+
+&:hover,
+&:focus{
+color:var(--accent-color); 
+}
+
+
+}
+
+.span_instagram {
 }

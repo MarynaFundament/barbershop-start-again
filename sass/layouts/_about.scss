@@ -42,16 +42,33 @@
     }
 }
 
+
+
 .about_item {
     width: 270px;
     height: 445px;
+   
 
     @media screen and (min-width: 768px) {
-    // width: 330px;
-    // height: 100%;
-    
+
+    height: 235px;
         } 
 }
+
+
+
+.second{
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        }
+
+}
+
 
 .about_block{
    

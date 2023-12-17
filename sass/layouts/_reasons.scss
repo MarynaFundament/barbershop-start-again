@@ -60,15 +60,17 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 6px;
 
-    width: 194px;
-    height: 133px;
+    width: 124px;
+    height: 103px;
 
     
     background-color: rgba(247, 247, 247, 1);
     
     @media screen and (min-width: 768px) {
+        
+        width: 194px;
+        height: 133px;    
        
                 }
             
@@ -89,10 +91,27 @@
 }
 
 .reasons-list_span{
-    @include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
-    display: flex;
 
+    @include font(var(--primary-font), 700, 32px, 1.36, 5%, var(--title-text-color2));
+    display: flex;
     margin: auto;
+ 
+
+      
+    @media screen and (min-width: 768px) {
+    @include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
+    margin: auto;
+        
+       
+                }
+            
+    @media screen and (min-width: 1200px) {
+    @include font(var(--primary-font), 700, 42px, 1.36, 5%, var(--title-text-color2));
+    margin: auto;
+                }
+
+
+
 
 }
 
@@ -104,11 +123,22 @@
 }
 
 .reasons_list-p{
-    @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
+    @include font(var(--primary-font), 600, 9px, 1.36, 5%, var(--title-text-color2));
     padding: 6px;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
+    margin: auto;
 
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+     @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
+    
+                   }
+               
+    @media screen and (min-width: 1200px) {
+    @include font(var(--primary-font), 600, 11px, 1.36, 5%, var(--title-text-color2));
+   
+                   }
 }
 
 .reasons_el-container{
@@ -117,31 +147,56 @@
 }
 
 .reasons_top-p {
-@include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+@include font(var(--primary-font), 600, 9px, 1.36, 2%, var(--title-text-color2));
 
 margin-bottom: 20px;
 display: flex;
 align-items: center;
 gap: 20px;
 
+@media screen and (min-width: 768px) {
+    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+  
+}
+
+@media screen and (min-width: 1200px) {
+    @include font(var(--primary-font), 600, 11px, 1.36, 2%, var(--title-text-color2));
+
+}
+
 }
 
 .reasons_header {
-@include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+@include font(var(--additional-font), 700, 30px, 1.17, 5%, var(--title-text-color2));
 margin-bottom: 20px;
 
+  
+@media screen and (min-width: 768px) {
+@include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color2));
+  
+
+            }
+        
+@media screen and (min-width: 1200px) {
+
+            }
+
 }
+
+
 .reasons_bottom-p {
-@include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
+@include font(var(--primary-font), 400, 14px, 1.66, 2%, var(--primary-text-color));
     width: 100%;
     margin-left: 0;
 
 
 @media screen and (min-width: 768px) {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
     width: 500px;    
 }
 
 @media screen and (min-width: 1200px) {
+    @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--primary-text-color));
     width: 500px; 
 }
 }

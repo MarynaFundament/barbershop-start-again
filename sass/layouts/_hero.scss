@@ -1,4 +1,10 @@
+// .background{
+//     border: 2px solid green;
+// }
+
 .hero {
+position: relative;
+
 
     
     
@@ -7,19 +13,22 @@
 
 .hero_container{
 display: flex;
+padding-right: 0;
+padding-left: 0;
+
 }
 
 .hero_networks{
-background-color: #fff;
-width: 100px;
 
-display: flex;
-align-items: flex-end;
+width: 50px;
+display: none;
 
 
 @media screen and (min-width: 768px) {
-   
-
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    width: 50px; 
     }
 
 @media screen and (min-width: 1200px) {
@@ -38,7 +47,7 @@ align-items: center;
 
 transform: rotate(-90deg) translateY(100%);
 transform-origin: bottom left;
-display: none;
+
 
 @media screen and (min-width: 768px) {
 
@@ -132,8 +141,6 @@ margin-bottom: 208px;
 .hero_wrap{
  background-image: url(../../images/Slider\ img\ 3.jpg);
  background-position: center;
- background-size: cover;
- background-size: contain;
 
  width: 100%;
  padding-left: 30px;
@@ -141,6 +148,12 @@ margin-bottom: 208px;
  flex-grow: 1;
  background-size: cover;
  margin-left: 0;
+
+
+
+//  position: absolute;
+//  z-index: 1;
+//  top: 50;
 
  @media screen and (min-width: 768px) {
 

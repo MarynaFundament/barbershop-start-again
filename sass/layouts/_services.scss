@@ -23,16 +23,40 @@
 
 
 .services_paragraph {
-    @include font(var(--primary-font), 600, 11px, 1.36, 0.02em, var(--paragraph-text-color));
+    @include font(var(--primary-font), 600, 9px, 1.36, 0.02em, var(--paragraph-text-color));
     display: flex;
     align-items: center;
-    gap:20px
+    gap:20px;
+
+
+    @media screen and (min-width: 768px) {
+    @include font(var(--primary-font), 600, 10px, 1.36, 0.02em, var(--paragraph-text-color));
+    
+    }
+        
+    @media screen and (min-width: 1200px) {
+        @include font(var(--primary-font), 600, 10px, 1.36, 0.02em, var(--paragraph-text-color));
+   
+    }
+
+
 }
 
 
 .services_header {
-    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
+    @include font(var(--additional-font), 700, 30px, 1.17, 5%, var(--title-text-color));
     margin-top: 20px;
+
+
+
+    @media screen and (min-width: 768px) {
+    @include font(var(--additional-font), 700, 42px, 1.17, 5%, var(--title-text-color));
+
+    }
+    
+    @media screen and (min-width: 1200px) {
+      
+    }
 }
 
 
@@ -118,11 +142,12 @@
     height: 1px;
     background-color: rgba(157, 164, 189, 0.6);
     flex-grow: 1
+  
 }
 
 
 .services_p-list {
-    @include font(var(--primary-font), 400, 14px, 1.4, 2%, var(--paragraph-text-color));
+    @include font(var(--primary-font), 400, 12px, 1.4, 2%, var(--paragraph-text-color));
     display: block;
     order:-1;
 
@@ -144,6 +169,19 @@
 
 
 .services_s-list {
+    @include font(var(--primary-font), 400, 12px, 1.4, 2%, var(--paragraph-text-color));
+    
+    
+    @media screen and (min-width: 768px) {
+        @include font(var(--primary-font), 400, 18px, 1.66, 2%, var(--paragraph-text-color));
+    
+        
+        }
+    
+    @media screen and (min-width: 1200px) {
+        @include font(var(--primary-font), 400, 18px, 1.10, 2%, var(--paragraph-text-color));
+    
+        }    
   
    
 }
